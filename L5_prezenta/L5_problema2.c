@@ -29,13 +29,13 @@ int main()
 {
 	int C, N, i,nr;
 	
-line:printf("C= "); 
+	line:printf("C= "); 
 	
-	if (scanf("%d", &C) > 0);
+	if (scanf("%d", &C) > 0); // put "scanf" in "if" to escape from warnings
 	if (C > 7 || C < 0)
 	{
 		printf("Error: wrong 'C' value \n");
-		goto line;
+		goto line; // this is silly
 	}
 	printf("N= "); if(scanf("%d", &N)>0);
 
